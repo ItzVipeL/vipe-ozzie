@@ -20,7 +20,7 @@ client.on ("guildMemberAdd", member =>{
 
 });
 
-bot.on('error', err => {
+client.on('error', err => {
     console.log(err);
 });
 
