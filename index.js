@@ -38,6 +38,10 @@ config({
     path: __dirname + "/.env"
 });
 
+client.on("message", message => {
+    return message.reply("This is a test monkey")
+});
+
 ["command"].forEach(handler => {
     require(`./handler/${handler}`)(client);
 });
